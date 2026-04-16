@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+<!-- 타이틀 옆에 이미지 -->
+	<link rel="shortcut icon" type="image/x-icon" href="navigation_egg.png">
+	<title>이스터 팩 구매하실 분?</title>
+
+
+	<style>
+
+/*한글 굴림체 팝업용*/
+		@font-face {font-family: 'JoseonGulim';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff') format('woff');
+    font-weight: normal; font-display: swap;}
+    
+/*본문 부크크고딕*/
+@font-face {
+    font-family: 'BookkGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkGothic-Lt.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;}
+
+@font-face {
+    font-family: 'BookkGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkGothic-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+/*폰트 클래스*/
+  		.text-pink{color: #FE01ED}
+		.text-yellow{color: #C4FF20}
+		
+
+/*클래스 지정*/
+	
+		.contents-nav{width: 100%; margin: 0; align-items: center;}
+		/*.contents-sec{width: 100%; margin: 0; box-sizing: border-box;}*/
+ 		.contents-div{width: 1000px;margin: auto; padding: 130px 0px; }
+ 		.relative{position: relative;}
+
+
+		.logo{padding: 20px 20px; width: 100px;}
+		.menu{display: flex;  align-items: center;}
+		.flex{display: flex;}
+		.item {display: flex; align-items: center;}
+			.item img {width: 100px; height: auto; padding: 0px 20px;}
+		/*	.item a {position: relative;
+					z-index: 1;}*/
+
+		.absolute{position: absolute;
+					left: 0;
+					top: 0;
+					z-index: 9998;}
+
+
+/*효과들...*/
+.bg-blur{backdrop-filter: blur(10px); color: #C4FF20;}
+.mosaic-img {
+  image-rendering: pixelated;
+  filter: blur(20px) brightness(1.1);
+  transition: filter 0.1s ease;
+  cursor: pointer;}
+  	.mosaic-img:hover {filter: none;}
+
+
+
+
+/*이미지 백그라운드 스타일*/
+	.pic1 {
+  justify-content: center;
+  align-items: center;
+}
+.background-none{background: none;}
+
+/*이외 스타일 지정*/
+		li{list-style-type: none;}
+/*		a{display: block;  padding:0; text-decoration: none;}
+		a:hover{background: black; transition: all 0.2s;}*/
+		img{display: block;}
+		
+		body {margin: 0;
+ 	background: url('home_bg.png');
+  	background-size: cover;
+  	background-position: center;
+  	background-attachment: fixed;}
+
+  	nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999}
+
+body, h1, h2, p, ul, li, img{margin: 0px; padding: 0px;}
+
+html, body {height: 100%; margin: 0;}
+
+
+
+	</style>
+</head>
+
+
+
+<body>
+	<nav>
+		<div class="contents-nav flex ">
+			<div class="logo">
+				<img src="egglogo.png" style="width: 100px;">
+			</div>
+				<ul class="menu">
+					<li class="item">
+						<img src="navi-home.png">
+					</li>
+					<li class="item">
+						<img src="navi-shop.png">
+					</li>
+					<li class="item">
+						<img src="navi-about.png">
+					</li>
+				</ul>
+		</div>
+	</nav>
+	<section class="">
+		<div class="contents-div pic1 relative">
+			<img src="mainBG-egg.png" class="absolute mosaic-img" style="width: 1300px; top: -350px; left:50%; transform:translateX(-50%); position: fixed;">
+		</div>
+		<div class="contents-div pic1 relative backgruond-none">
+			<img src="maintitle.png" class="absolute" style="width:1200px; top:-100px; ;left:50%; transform:translateX(-50%);" >
+			<img src="maintitle-pack.png"class="absolute" style="width:300px; top: 310px; left:50%; transform:translateX(-50%);" >
+		</div>
+
+	</section>
+
+
+
+ 		<script src="https://cdn.jsdelivr.net/npm/cursor-effects@latest/dist/browser.js"></script>
+  		<script>
+    new emojiCursor({ emoji: ["🥚", "🐣"], delay: 20 });
+ 		</script>
+	</body>
+</html>
